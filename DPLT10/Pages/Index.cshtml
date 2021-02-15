@@ -1,0 +1,353 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Site Metas -->
+    <title>Game Info</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- end font family -->
+    <link rel="stylesheet" href="css/3dslider.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="js/3dslider.js"></script>
+</head>
+<body>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="~/images/DPLTrophy.jpg" alt="ASP.NET" style="width:100%;" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/images/IMG-1639.jpg" alt="Visual Studio" style="width:100%;" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <div class="slider-contant" data-animation="animated fadeInRight">
+                        <i><h1><span class="color-yellow">You Don't Win or Lose the Game <br>because of the Players You Select<br /> </span>You Win or Lose with what<br>those Players do On the Field!</h1></i>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/images/DPLLogojpg.jpg" alt="Microsoft Azure" style="width:100%;" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="display:none;">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="display:none;">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <div class="full-slider">
+        <div class="news">
+            <div class="container">
+                <div class="heading-slider">
+                    <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> Top Headlines :</p>
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "DPLT10 Auction will be held on 03/07/2021 Venue will be announced soon", "More Details will be coming soon."]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <span class="wrap"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="matchs-info">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row" style="color:black;">
+                <div class="full">
+                    <div class="matchs-vs">
+                        <div class="vs-team">
+                            <div class="team-btw-match">
+                                <ul class="img-responsive" style="background:black;">
+                                    <h1>Match 1</h1>
+                                    <li>
+                                        <img src="images/RiversideRomeos.png" style="width:100px;height:100px;" alt="">
+                                        <span>Riverside Romeos</span>
+                                    </li>
+                                    <li class="vs"><span>vs</span></li>
+                                    <li>
+                                        <img src="images/Blasters.png" style="width:100px;height:100px;" alt="">
+                                        <span>Miamisburg Blasters</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="row">
+                <div class="full">
+                    <div class="right-match-time" style="height:400px;">
+                        <h2>DPLT10 2021</h2>
+                        <span>04/17/2021 9:00 A.M</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contant" class="contant">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <aside id="sidebar" class="left-bar">
+                    </aside>
+                    <h4>Match Fixture</h4>
+                    <aside id="sidebar" class="left-bar">
+                        <div class="feature-matchs">
+                            <div class="team-btw-match">
+                                <div class="top-stroy-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/RiversideRomeos.png" style="width:50px;height:50px;" alt="">
+                                            <span>Riverside Romeos</span>
+                                        </li>
+                                        <li><span>vs</span></li>
+                                        <li>
+                                            <img src="images/Blasters.png" style="width:50px;height:50px;" alt="">
+                                            <span>Maimisburg Blasters</span>
+                                        </li>
+
+                                    </ul>
+                                    <div style="text-align:center;">04/17/2021 9:00 AM</div>
+                                </div>
+                                <div class="top-stroy-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/Blasters.png" style="width:50px;height:50px;" alt="">
+                                            <span>MIAMISBURG BLASTERS</span>
+                                        </li>
+                                        <li><span>vs</span></li>
+                                        <li>
+                                            <img src="images/Flickers.png" style="width:50px;height:50px;" alt="">
+                                            <span>FAIRBORN FLICKERS</span>
+                                        </li>
+
+                                    </ul>
+                                    <div style="text-align:center;">04/17/2021 11:00 AM</div>
+                                </div>
+                                <div class="top-stroy-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/Flickers.png" style="width:50px;height:50px;" alt="">
+                                            <span>FAIRBORN FLICKERS</span>
+                                        </li>
+                                        <li><span>vs</span></li>
+                                        <li>
+                                            <img src="images/Demons.png" style="width:50px;height:50px;" alt="">
+                                            <span>DAYTON DEMONS</span>
+                                        </li>
+
+                                    </ul>
+                                    <div style="text-align:center;">04/17/2021 1:00 PM</div>
+                                </div>
+                                <div class="top-stroy-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/Demons.png" style="width:50px;height:50px;" alt="">
+                                            <span>DAYTON DEMONS</span>
+                                        </li>
+                                        <li><span>vs</span></li>
+                                        <li>
+                                            <img src="images/Raptors.png" style="width:50px;height:50px;" alt="">
+                                            <span>BEAVERCREEK RAPTORS</span>
+                                        </li>
+
+                                    </ul>
+                                    <div style="text-align:center;">04/18/2021 9:00 A.M</div>
+                                </div>
+                                <div class="top-stroy-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/Raptors.png" style="width:50px;height:50px;" alt="">
+                                            <span>BEAVERCREEK RAPTORS</span>
+                                        </li>
+                                        <li><span>vs</span></li>
+                                        <li>
+                                            <img src="images/TOPazc.png" style="width:50px;height:50px;" alt="">
+                                            <span>CINCY TOPAZC</span>
+                                        </li>
+
+                                    </ul>
+                                    <div style="text-align:center;">04/18/2021 11:00 A.M</div>
+                                </div>
+                                <div class="top-stroy-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/TOPazc.png" style="width:50px;height:50px;" alt="">
+                                            <span>CINCY TOPAZC</span>
+                                        </li>
+                                        <li><span>vs</span></li>
+                                        <li>
+                                            <img src="images/RiversideRomeos.png" style="width:50px;height:50px;" alt="">
+                                            <span>RIVERSIDE ROMEOS</span>
+                                        </li>
+
+                                    </ul>
+                                    <div style="text-align:center;">04/18/2021 1:00 PM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    @*  <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Team</th>
+                                            <th>P</th>
+                                            <th>W</th>
+                                            <th>L</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><img src="images/img-01_004.png" alt="">Liverpool</td>
+                                            <td>10</td>
+                                            <td>12</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><img src="images/img-02_002.png" alt="">Chelsea</td>
+                                            <td>10</td>
+                                            <td>12</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><img src="images/img-03_003.png" alt="">Norwich City</td>
+                                            <td>20</td>
+                                            <td>15</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td><img src="images/img-04_002.png" alt="">West Brom</td>
+                                            <td>60</td>
+                                            <td>10</td>
+                                            <td>60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td><img src="images/img-05.png" alt="">sunderland</td>
+                                            <td>30</td>
+                                            <td>06</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><img src="images/img-01_004.png" alt="">Liverpool</td>
+                                            <td>10</td>
+                                            <td>12</td>
+                                            <td>20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </aside>*@
+
+                </div>
+                <div class="col-lg-8 col-sm-8 col-xs-12">
+                    <div class="news-post-holder">
+                        <div class="news-post-widget">
+                            <div class="content-widget top-story" style="background: url(images/top-story-bg.jpg);">
+                                <div class="top-stroy-header">
+                                    <h2>Top Cricket Headlines Story <a href="#" class="fa fa-fa fa-angle-right"></a></h2>
+                                </div>
+                                <ul class="other-stroies">
+                                    <li><a href="https://www.cricbuzz.com/live-cricket-scores/32253/england-tour-of-india-2021-england-tour-of-india-2021" target="_blank">India Lost 1st Test against England</a></li>
+                                    <li><a href="https://www.cricbuzz.com/live-cricket-scorecard/32232/pak-vs-rsa-2nd-test-south-africa-tour-of-pakistan-2021" target="_blank">Pak vs RSA 2nd Test Scorecard</a></li>
+                                    <li><a href="https://www.cricbuzz.com/live-cricket-scorecard/32312/ban-vs-wi-1st-test-west-indies-tour-of-bangladesh-2021" target="_blank">Bangladesh vs West Indies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="news-post-holder">
+                            <div class="news-post-widget">
+                                <h3>DPLT10 2021 Sponser</h3>
+                                <h2><a href="http://gotonicks.com/" target="_blank"><img style="width:100px" src="~/images/Nicks.png" /><b> Nick's Restaurent</b></a></h2>
+                            </div>
+                        </div>
+                        <div class="news-post-widget">
+                            @*<img class="img-responsive" src="images/img-02_003.jpg" alt="">*@
+                            <div class="news-post-detail">
+                                <h3>DPLT10 2021 Co-sponser</h3>
+                                <h2><a href="http://www.immigrationss.com/" target="_blank"><img src="~/images/Meenusharma.png" /> Law Office of Meenu Sharma</a></h2>
+                                <h2><a href="https://www.awohio.com/" target="_blank"><img src="~/images/AndersonInsurance.PNG" style="width:100px;" />AndersonWilliamson Insurance</a></h2>
+                                <h2><img src="~/images/22.jpeg" style="width:100px;height:100px;" /><b>Maveric</b></a></h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" style="padding-left:20px;background-color:white">
+        <div style="color:black;">Special Thanks to:</div>
+        <div class="row">
+            <img src="~/images/12.jpg" style="width:80px;height:60px;" />
+            <img src="~/images/13.jpg" style="width:80px;height:60px;" />
+            <img src="~/images/14.jpg" style="width:100px;height:80px;" />
+            <img src="~/images/16.png" style="width:80px;height:60px;" />
+            <img src="~/images/17.jpg" style="width:120px;height:60px;" />
+            <img src="~/images/18.jpg" style="width:120px;height:60px;" />
+            <img src="~/images/19.jpg" style="width:100px;height:80px;" />
+            <img src="~/images/23.png" style="width:80px;height:80px;" />
+        </div>
+        @*<div class="footer-bottom">
+                <div class="container">
+                    <p></p>
+                </div>
+            </div>*@
+    </footer>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+
+

@@ -1,0 +1,318 @@
+﻿@page
+@model DPLT10.Pages.DPL2021Model
+
+@{
+    ViewData["Title"] = "DPL2021";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Site Metas -->
+    <title>Game Info</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- end font family -->
+    <link rel="stylesheet" href="css/3dslider.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="js/3dslider.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+                /* Change background color of buttons on hover */
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+
+                /* Create an active/current tablink class */
+                .tab button.active {
+                    background-color: #ccc;
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            background: url('../images/istockphoto-177427917-612x612.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="~/images/DPLheader.png" style="width:1140px;" class="img-responsive" />
+    <div class="tab" style="background-color:black;">
+        <button class="tablinks" onclick="openCity(event, 'London')" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: White;">Teams</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: White;">Schedule</button>
+        <button class="tablinks" onclick="openCity(event, 'Videos')" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: White;">Videos</button>
+        <button class="tablinks" onclick="openCity(event, 'Players')" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: White;">All Players</button>
+        <button class="tablinks" onclick="openCity(event, 'Table')" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: White;">Stats</button>
+    </div>
+
+    <div id="London" class="tabcontent" style="display:block;">
+        <h3 style="background-color:red;"><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: yellow;">Fairborn </b><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: white;">Flickers</b> <img src="~/images/Flickers.png" style="width:50px;height:50px;" /></h3>
+        <h3 style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: black;">Owner: Jimmy Patel</h3>
+        <a href="~/FairbornFlickers" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color:white; font-size:x-large;"><b>Players List</b></a>
+        <h3 style="background-color:yellow;"><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: royalblue;">RIVERSIDE </b><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: brown;">ROMEOS</b><img src="~/images/RiversideRomeos.png" style="width:50px;height:50px;" /></h3>
+        <h3 style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: black;">Owner: Neeraj Naidu</h3>
+        <a href="~/" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color:white; font-size:x-large;"><b>Players List</b></a>
+        <h3 style="background-color:brown;"><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: orange;">BEAVERCREEK RAPTORS</b><img src="~/images/Raptors.png" style="width:50px;height:50px;" /></h3>
+        <h3 style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: black;">Owner: Nithin Pahwa</h3>
+        <a href="~/" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color:white; font-size:x-large;"><b>Players List</b></a>
+        <h3 style="background-color:blue"><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: orange;">MIAMISBURG </b><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: lawngreen;">BLASTERS</b><img src="~/images/Blasters.png" style="width:50px;height:50px;" /></h3>
+        <h3 style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: black;">Owner: Kamal Gulati</h3>
+        <a href="~/" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color:white; font-size:x-large;"><b>Players List</b></a>
+        <h3 style="background-color:mediumpurple;"><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: coral;">CINCY TOPazc  </b><img src="~/images/TOPazc.png" style="width:50px;height:50px;" /></h3>
+        <h3 style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: black;">Owner: Rick Rathore</h3>
+        <a href="~/" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color:white; font-size:x-large;"><b>Players List</b></a>
+        <h3 style="background-color:dodgerblue;"><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: yellow;">DAYTON </b><b style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: white;">DEMONS</b><img src="~/images/Demons.png" style="width:50px;height:50px;" /></h3>
+        <h3 style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color: black;">Owner: Hemant Patel</h3>
+        <a href="~/" style=" text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-family: sans; color:white; font-size:x-large;"><b>Players List</b></a>
+    </div>
+
+    <div id="Paris" class="tabcontent"   style="background:black;display:block;">
+        <div id="Schedule" ></div>
+
+    </div>
+
+    <div id="Videos" class="tabcontent" style="display: block;">
+        <h3 style="text-decoration:solid;color:cornflowerblue;">DPL2021 Teaser</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PchCChkZcfk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 style="text-decoration:solid;color:cornflowerblue;">FairBorn Flickers</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A02txvGZMMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 style="text-decoration:solid;color:cornflowerblue;">Dayton Demons</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/58kyUXmzEeQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 style="text-decoration:solid;color:cornflowerblue;">Miamisburg Blasters</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S05RVCThfg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 style="text-decoration:solid;color:cornflowerblue;">Riverside Romeos</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PBZ94oVBcyE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 style="text-decoration:solid;color:cornflowerblue;">Beavercreek Raptors</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_lVFXGIK3-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3 style="text-decoration:solid;color:cornflowerblue;">Cincy Topazc</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iiHEDUuwGNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="Players" class="tabcontent" style="display: block;">
+        <iframe src="https://onedrive.live.com/embed?cid=6E01D01AE3FB1358&amp;resid=6E01D01AE3FB1358%21109&amp;authkey=AHif4oX3wMWZrtA&amp;em=2&amp;wdAr=1.7777777777777777&amp;" width="962px" height="565px" frameborder="0">
+        </iframe>
+    </div>
+    <div id="Table" class="tabcontent" style="display: block;">
+        <h4>DPLT10 Points Table</h4>
+        <aside id="sidebar" class="left-bar">
+            <div class="feature-matchs">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Teams</th>
+                            <th>Played</th>
+                            <th>Won</th>
+                            <th>Lost</th>
+                            <th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="~/images/Raptors.png" alt="" style="width:50px;height:50px;">Beavercreek Raptors</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="~/images/TOPazc.png" alt="" style="width:50px;height:50px;">Cincy TOPazc</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="~/images/Demons.png" alt="" style="width:50px;height:50px;">Dayton Demons</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="~/images/Flickers.png" alt="" style="width:50px;height:50px;">Fairborn Flickers</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="~/images/Blasters.png" alt="" style="width:50px;height:50px;">Miamisburg Blasters</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="~/images/RiversideRomeos.png" alt="" style="width:50px;height:50px;">Riverside Romeos</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+        <h4>Top 10 Batsmens</h4>
+        <aside id="sidebar" class="left-bar">
+            <div class="feature-matchs">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Players</th>
+                            <th>P</th>
+                            <th>R</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @*<td>1</td>
+                                <td><img src="" alt=""></td>
+                                <td></td>
+                                <td></td>*@
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+        <h4>Top 10 Bowlers</h4>
+        <aside id="sidebar" class="left-bar">
+            <div class="feature-matchs">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Players</th>
+                            <th>P</th>
+                            <th>R</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @*<td>1</td>
+                                <td><img src="" alt=""></td>
+                                <td></td>
+                                <td></td>*@
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+        <h4>Top 10 All-Rounders</h4>
+        <aside id="sidebar" class="left-bar">
+            <div class="feature-matchs">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Players</th>
+                            <th>P</th>
+                            <th>R</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            @*<td>1</td>
+                                <td><img src="" alt=""></td>
+                                <td></td>
+                                <td></td>*@
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            if (cityName == "Paris") {
+                $.ajax({
+                    type: "Get",
+                    url: window.location.origin + "/Schedule",
+                    success: function (result) {
+                        $('#Schedule').replaceWith(result);
+                    },
+                    error: function (e) {
+                        console.log("Data cannot be retrieved.");
+                    }
+                });
+            }
+          
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿@page
+@model DPLT10.Pages.ScheduleModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body >
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <br>
+        <table>
+            <tbody id="myTable" >
+                @foreach (var Schedule in Model.Schedules)
+                {
+                    <tr>
+                        <td style="text-align:center"><b style="color:white;font-size:large;">@Schedule.Match </b></td>
+                   
+                        <td>&nbsp;&nbsp;
+                            <b style="color:white">
+                                @Schedule.Date
+                                @Schedule.Time
+                            </b>
+                        </td>
+                        @if (@Schedule.Team1 == "RIVERSIDE ROMEOS")
+                        {
+                            <td><img src="~/images/RiversideRomeos.png" style="width:50px;height:50px;" /><b style="color:dodgerblue;font-size:large;">RIVERSIDE ROMEOS</b></td>
+                        }
+                        else if (@Schedule.Team1 == "MIAMISBURG BLASTERS")
+                        {
+                            <td><img src="~/images/Blasters.png" style="width:50px;height:50px;" /><b style="color:lawngreen;font-size:large;">MIAMISBURG BLASTERS</b></td>
+                        }
+                        else if (@Schedule.Team1 == "FAIRBORN FLICKERS")
+                        {
+                            <td><img src="~/images/Flickers.png" style="width:50px;height:50px;" /><b style="color:red;font-size:large;">FAIRBORN FLICKERS</b></td>
+                        }
+                        else if (@Schedule.Team1 == "DAYTON DEMONS")
+                        {
+                            <td><img src="~/images/Demons.png" style="width:50px;height:50px;" /><b style="color:yellow;font-size:large;">DAYTON DEMONS</b></td>
+                        }
+                        else if (@Schedule.Team1 == "BEAVERCREEK RAPTORS")
+                        {
+                            <td><img src="~/images/Raptors.png" style="width:50px;height:50px;" /><b style="color:brown;font-size:large;">BEAVERCREEK RAPTORS</b></td>
+                        }
+                        else if (@Schedule.Team1 == "CINCY TOPAZC")
+                        {
+                            <td><img src="~/images/TOPazc.png" style="width:50px;height:50px;" /><b style="color:orange;font-size:large;">CINCY TOPAZC</b></td>
+                        }
+                        <td><b style="color:white">@Schedule.vs</b></td>
+                        @if (@Schedule.Team2 == "RIVERSIDE ROMEOS")
+                        {
+                            <td><img src="~/images/RiversideRomeos.png" style="width:50px;height:50px;" /><b style="color:dodgerblue;font-size:large;">RIVERSIDE ROMEOS</b></td>
+                        }
+                        else if (@Schedule.Team2 == "MIAMISBURG BLASTERS")
+                        {
+                            <td><img src="~/images/Blasters.png" style="width:50px;height:50px;" /><b style="color:lawngreen;font-size:large;">MIAMISBURG BLASTERS</b></td>
+                        }
+                        else if (@Schedule.Team2 == "FAIRBORN FLICKERS")
+                        {
+                            <td><img src="~/images/Flickers.png" style="width:50px;height:50px;" /><b style="color:red;font-size:large;">FAIRBORN FLICKERS</b></td>
+                        }
+                        else if (@Schedule.Team2 == "DAYTON DEMONS")
+                        {
+                            <td><img src="~/images/Demons.png" style="width:50px;height:50px;" /><b style="color:yellow;font-size:large;">DAYTON DEMONS</b></td>
+                        }
+                        else if (@Schedule.Team2 == "BEAVERCREEK RAPTORS")
+                        {
+                            <td><img src="~/images/Raptors.png" style="width:50px;height:50px;" /><b style="color:brown;font-size:large;">BEAVERCREEK RAPTORS</b></td>
+                        }
+                        else if (@Schedule.Team2 == "CINCY TOPAZC")
+                        {
+                            <td><img src="~/images/TOPazc.png" style="width:50px;height:50px;" /><b style="color:orange;font-size:large;">CINCY TOPAZC</b></td>
+                        }
+                        <td><br /><br /></td>
+                    </tr>
+                    }
+                
+            </tbody>
+        </table>
+</body>
+</html>
